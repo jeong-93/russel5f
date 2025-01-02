@@ -25,7 +25,7 @@
         .form-container {
         display: inline-block;
         text-align: center;
-        border: 1px solid #ccc;
+        border: 1px solid #ccc;`
         padding: 20px;
         width: 45%; /* 적절한 너비로 설정 */
         font-size: 1.2em;
@@ -106,6 +106,8 @@
             <option value="G">G</option>
             <option value="H">H</option>
             <option value="I">I</option>
+            <option value="J">J</option>
+            <option value="K">K</option>
         </select>
 
         <select id="seatNumber1_2" required="">
@@ -125,7 +127,6 @@
             <option value="13">13</option>
             <option value="14">14</option>
             <option value="15">15</option>
-            <option value="16">16</option>
             <option value="21">21</option>
             <option value="22">22</option>
             <option value="23">23</option>
@@ -140,11 +141,14 @@
             <option value="32">32</option>
             <option value="33">33</option>
             <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
         </select><br />
-        
-        <label for="returnTime2">복귀교시:</label>
-        <select id="returnTime2" required="">
+
+        <label for="returnTime1">복귀교시:</label>
+        <select id="returnTime1" required="">
             <option value="">선택하세요</option>
+            <optgroup label="복귀 교시 선택">
             <option value="2">2교시</option>
             <option value="3">3교시</option>
             <option value="4">4교시</option>
@@ -153,7 +157,7 @@
             <option value="7">7교시</option>
             <option value="8">8교시</option>
             <option value="복귀안함">복귀안함</option>
-         </select><br />
+        </select><br />
 
         <label for="reason1">사유:</label>
         <select id="reason1" required="">
@@ -177,6 +181,7 @@
         <h2>교육점수 기록표</h2>
         <label for="building2">관:</label>
         <select id="building2" required="">
+            <option value="">선택하세요</option>
             <option value="5-1관">5-1관</option>
             <option value="5-2관">5-2관</option>
             <option value="5-3관">5-3관</option>
@@ -192,6 +197,8 @@
             <option value="G">G</option>
             <option value="H">H</option>
             <option value="I">I</option>
+            <option value="J">J</option>
+            <option value="K">K</option>
         </select>
         <select id="seatNumber2_2" required="">
             <option value="">선택하세요</option>
@@ -210,7 +217,6 @@
             <option value="13">13</option>
             <option value="14">14</option>
             <option value="15">15</option>
-            <option value="16">16</option>
             <option value="21">21</option>
             <option value="22">22</option>
             <option value="23">23</option>
@@ -225,6 +231,8 @@
             <option value="32">32</option>
             <option value="33">33</option>
             <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
         </select><br />
 
         <label for="defaultValue">교육점수:</label>
@@ -330,7 +338,7 @@
 
             const building = document.getElementById("building1").value;
             const seatNumber = document.getElementById("seatNumber1_1").value + document.getElementById("seatNumber1_2").value;
-            const returnTime = document.getElementById("returnTime2").value;
+            const returnTime = document.getElementById("returnTime1").value;
             const reason = document.getElementById("reason1").value;
             const moveData = {
                 building: building,
@@ -348,9 +356,9 @@
             refreshMoveList1();
 
             document.getElementById("moveForm1").reset();
-
+            
             // POST request를 보냄
-            fetch('https://script.google.com/macros/s/AKfycbwVu3MV83bFriuzGsmFTRbysabqolCRRRapPJNQlP_q6LdP-ZGsq3Unb3P0cVhMpEB4/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbytVRRnXw4RQxvmC3PYIuHabM7oBBR5wMs9T84u9XGBi9ECBDsjYzDLfk7Em5YWtq4/exec', {
                 method: 'POST',
                 body: JSON.stringify(moveData)
             });
@@ -382,7 +390,7 @@
             document.getElementById("moveForm2").reset();
 
             // POST request를 보냄
-            fetch('https://script.google.com/macros/s/AKfycbwVu3MV83bFriuzGsmFTRbysabqolCRRRapPJNQlP_q6LdP-ZGsq3Unb3P0cVhMpEB4/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwB_eODgbLpFmkutx_Vw94LNseASFsrGE-tGZCAIQuGofzun8Cg3xDCih4Kyg7Qf6PU/exec', {
                 method: 'POST',
                 body: JSON.stringify(moveData)
             });
