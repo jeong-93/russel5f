@@ -202,7 +202,6 @@
         </select>
         <select id="seatNumber2_2" required="">
             <option value="">선택하세요</option>
-            <option value="">선택하세요</option>
             <option value="01">01</option>
             <option value="02">02</option>
             <option value="03">03</option>
@@ -391,7 +390,7 @@
             document.getElementById("moveForm2").reset();
 
             // POST request를 보냄
-            fetch('https://script.google.com/macros/s/AKfycbxIwJ993ryEKZTnCmiX0tmjBOu6b-31Ut6t1XBqb3hT5h9UjDH7fylXVKDYw2VZCEM/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbxChQwVw4yJVAbOCw_KDAndPC3b_RHrVK1DYmVcv5hDG9NpgGsGv45nXRrc5jBmT0Zj/exec', {
                 method: 'POST',
                 body: JSON.stringify(moveData)
             });
