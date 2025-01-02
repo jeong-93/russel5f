@@ -142,8 +142,8 @@
             <option value="34">34</option>
         </select><br />
         
-        <label for="returnTime">복귀교시:</label>
-        <select id="returnTime" required="">
+        <label for="returnTime2">복귀교시:</label>
+        <select id="returnTime2" required="">
             <option value="">선택하세요</option>
             <option value="2">2교시</option>
             <option value="3">3교시</option>
@@ -330,7 +330,7 @@
 
             const building = document.getElementById("building1").value;
             const seatNumber = document.getElementById("seatNumber1_1").value + document.getElementById("seatNumber1_2").value;
-            const returnTime = document.getElementById("returnTime1").value;
+            const returnTime = document.getElementById("returnTime2").value;
             const reason = document.getElementById("reason1").value;
             const moveData = {
                 building: building,
