@@ -91,9 +91,11 @@
         <label for="building1">관:</label>
         <select id="building1" required="">
             <option value="">선택하세요</option>
-            <option value="5-1관">5-1관</option>
-            <option value="5-2관">5-2관</option>
-            <option value="5-3관">5-3관</option>
+            <option value="3-1관">3-1관</option>
+            <option value="3-2관">3-2관</option>
+            <option value="3-3관">3-3관</option>
+            <option value="3-4관">3-4관</option>
+            <option value="3-5관">3-5관</option>
         </select><br />
         <label for="seatNumber1">좌석번호:</label>
         <select id="seatNumber1_1" required="">
@@ -127,22 +129,6 @@
             <option value="13">13</option>
             <option value="14">14</option>
             <option value="15">15</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
-            <option value="32">32</option>
-            <option value="33">33</option>
-            <option value="34">34</option>
-            <option value="35">35</option>
-            <option value="36">36</option>
         </select><br />
 
         <label for="returnTime1">복귀교시:</label>
@@ -181,9 +167,11 @@
         <label for="building2">관:</label>
         <select id="building2" required="">
             <option value="">선택하세요</option>
-            <option value="5-1관">5-1관</option>
-            <option value="5-2관">5-2관</option>
-            <option value="5-3관">5-3관</option>
+            <option value="3-1관">3-1관</option>
+            <option value="3-2관">3-2관</option>
+            <option value="3-3관">3-3관</option>
+            <option value="3-4관">3-4관</option>
+            <option value="3-5관">3-5관</option>
         </select><br />
         <label for="seatNumber2">좌석번호:</label>
         <select id="seatNumber2_1" required="">
@@ -216,22 +204,6 @@
             <option value="13">13</option>
             <option value="14">14</option>
             <option value="15">15</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
-            <option value="32">32</option>
-            <option value="33">33</option>
-            <option value="34">34</option>
-            <option value="35">35</option>
-            <option value="36">36</option>
         </select><br />
 
         <label for="defaultValue">교육점수:</label>
@@ -357,7 +329,7 @@
             document.getElementById("moveForm1").reset();
 
             // POST request를 보냄
-            fetch('https://script.google.com/macros/s/AKfycbwOQ8DVBRG1i8DhYbac6eogPuJmLk7E27Br2_ODffMkeLkVxZkkFFJTFirIkDMErgF-/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwVu3MV83bFriuzGsmFTRbysabqolCRRRapPJNQlP_q6LdP-ZGsq3Unb3P0cVhMpEB4/exec', {
                 method: 'POST',
                 body: JSON.stringify(moveData)
             });
@@ -389,7 +361,7 @@
             document.getElementById("moveForm2").reset();
 
             // POST request를 보냄
-            fetch('https://script.google.com/macros/s/AKfycbwOQ8DVBRG1i8DhYbac6eogPuJmLk7E27Br2_ODffMkeLkVxZkkFFJTFirIkDMErgF-/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwVu3MV83bFriuzGsmFTRbysabqolCRRRapPJNQlP_q6LdP-ZGsq3Unb3P0cVhMpEB4/exec', {
                 method: 'POST',
                 body: JSON.stringify(moveData)
             });
